@@ -45,17 +45,12 @@ function findLargest(numbers) {
  * The check should be case-insensitive.
  */
 function isPalindrome(str) {
-  // TODO: Implement this function.
-  const insensitive = str.toUpperCase;
-  let reverse = null;
-
-  for (let i = insensitive.length - 1; i >= 0; i--) {
-    reverse += insensitive[i];
+  const tolower = str.toLowerCase();
+  let reverse = "";
+  for (let i = tolower.length - 1; i >= 0; i--) {
+    reverse += tolower[i];
   }
-
-  return insensitive === reverse;
-
-
+  return tolower === reverse;
 }
 
 /**
